@@ -4,7 +4,7 @@ This is a dead simple books CRUD api example using ExpressJS.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the package manager [npm](https://www.npmjs.com/) to install dependencies.
 
 ```bash
 npm i
