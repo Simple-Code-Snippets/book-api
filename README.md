@@ -1,13 +1,19 @@
 # Description
 
-This is a dead simple books CRUD api example using ExpressJS.
+This is a dead simple books CRUD api example using ExpressJS & MongoDB.
 
-## Installation
+## Dependencies installation
 
 Use the package manager [npm](https://www.npmjs.com/) to install dependencies.
 
 ```bash
 npm i
+```
+
+### Development server
+
+```bash
+node .
 ```
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

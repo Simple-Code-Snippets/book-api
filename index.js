@@ -39,6 +39,13 @@ app.get('/:id', function(req, res) {
     })
 })
 
+app.post('/delete', function(req, res) {
+    const id = req.body.id
+    Book.deleteOne({_id: id}, function(err) {
+        res.status(200)
+    })
+})
+
 app.post('/save', function(req, res) {
     const newTitle = req.body.title
     const newAuthor = req.body.author
@@ -61,12 +68,5 @@ app.post('/update', function(req, res) {
         book.save(function(err, book) {
             res.status(200)
         })
-    })
-})
-
-app.get('/remove', function(req, res) {
-    const id = req.query.id
-    Book.deleteOne({_id: id}, function(err) {
-        res.status(200)
     })
 })
